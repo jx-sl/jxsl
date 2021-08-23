@@ -1,0 +1,12 @@
+h1.logo {
+    font-size: 0;
+    background: url("../img/logo_jxsl.png") center center no-repeat;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #666;
+    font-weight: bold;
+}
