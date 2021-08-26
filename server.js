@@ -1,8 +1,6 @@
-// Load Node modules
-var express = require('express');
-// Initialise Express
-var app = express();
-// Render static files
-app.use(express.static('web'));
-// Port website will run on
-app.listen(80);
+const express = require('express')
+const PORT = process.env.PORT || 5000
+
+express()
+  .use(express.static('web'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
