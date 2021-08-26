@@ -3,7 +3,6 @@
 const availableLangs = ["de", "pt", "en"]
 
 function loadLangButtons(){
-    console.log(1);
     availableLangs.forEach(function(lang){
         let aField = document.createElement('a');
         let linkText = document.createTextNode(lang);
@@ -45,3 +44,8 @@ function loadJSON(callback, fileName) {
     };
     request.send(null);
  }
+
+window.onload = function (){
+   setLanguage();
+   loadLangButtons();
+}
